@@ -1,23 +1,7 @@
-list <int> :: iterator t;
 
-bool checkPos(list <int> array1, list<int> array2, int play)
+bool ispa(list <int> arr, list <int> arr2, int a)
 {
-
-	for(t = array1.begin(); t != array1.end(); t++)
-	{
-		if(play == *t)
-		{
-			return false;
-		}else ;
-	}
-	for(t = array2.begin(); t != array2.end(); t++)
-	{
-		if(play == *t)
-		{
-			return false;
-		}else ;
-	}
-	return true;
-
+    if(find(arr.begin(), arr.end(), a) != arr.end() ) return true;
+    else if (find(arr2.begin(), arr2.end(), a) != arr2.end()) return true;
+    else return false;
 }
-
