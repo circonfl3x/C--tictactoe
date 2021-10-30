@@ -57,7 +57,7 @@ int main(int argc, char **argv)
         }else ;
         while(1)
         {
-            //srand((unsigned) time(&timer)); //greyed out for runtime issues
+            //srand((unsigned) time(&timer)); //commented out due to runtime issues
             cpuplay = rand() % 10;
             if(!checkPos(pos, co, cpuplay)) ;
             else if(cpuplay > 9) ;
