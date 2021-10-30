@@ -25,7 +25,7 @@ char gameBoard [5][5] =
 
 list <int> pos,co;
 int playerplay, cpuplay;
-time_t timer;
+//time_t timer; //deprecated
 
 
 int main(int argc, char **argv)
