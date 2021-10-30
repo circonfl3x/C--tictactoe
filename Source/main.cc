@@ -40,7 +40,7 @@ int main(int argc, char **argv)
             cin >> playerplay;
             if (!cin) throw;
             else if (playerplay > 9) ;
-            else if(!checkPos(pos, co, playerplay)) cout << "Position taken! Play again: " << endl;
+            else if(ispa(pos, co, playerplay)) cout << "Position taken! Play again: " << endl;
             else
             {
                 pos.push_back(playerplay);
@@ -59,7 +59,7 @@ int main(int argc, char **argv)
         {
             //srand((unsigned) time(&timer)); //commented out due to runtime issues
             cpuplay = rand() % 10;
-            if(!checkPos(pos, co, cpuplay)) ;
+            if(ispa(pos, co, cpuplay)) ;
             else if(cpuplay > 9) ;
             else
             {
