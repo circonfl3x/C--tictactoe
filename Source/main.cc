@@ -4,6 +4,7 @@ using namespace std;
 #include <time.h>
 #include <stdlib.h>
 #include <list>
+#include <string.h>
 #include <iterator>
 #include <string>
 #include <stdbool.h>
@@ -136,8 +137,9 @@ bool WinCase(list <int> lr)
 void input( char gameBoard[5][5], string player, int play)
 {
 	char symbol = ' ';
-	if(player == "player")
-	{
+	//if(player == "player")
+	if(!strcmp(player.c_str(), "player"))
+    {
 		symbol = 'X';
 	}else symbol = '0';
 
